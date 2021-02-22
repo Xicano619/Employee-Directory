@@ -1,22 +1,13 @@
-import React from "react";
-import "./Header.css";
+import React, { Component } from 'react';
+import "../styles/Header.css";
 
-const styles = {
-  headerStyle: {
-    background: "#3106f5"
-  },
-  headingStyle: {
-    fontSize: 50
+export default class Header extends Component {
+  render() {
+    return (
+      <div className="header">
+        <h1>Employee Directory</h1>
+        <p>Click on carrots to filter by heading or use the search box to narrow your results.</p>
+      </div>
+    )
   }
-};
-
-
-function Header() {
-  return (
-    <header style={styles.headerStyle} className="header">
-      <h1 style={styles.headingStyle}>Employee Directory</h1>
-    </header>
-  );
 }
-
-export default Header;
