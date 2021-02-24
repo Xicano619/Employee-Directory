@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import DataTable from "../DataTable/index";
-// import Nav from "./Nav";
+
 import SearchBox from '../../components/SearchBox/index';
-import API from "../utils/API";
-// import "../styles/DataArea.css";
+import API from "../../utils/API";
+
 
 export default class DataArea extends Component {
   constructor() {
